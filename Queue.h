@@ -104,7 +104,6 @@ public:
         // связываем список обратно, меняем указатель на узел, следующий после нового узла, на указатель на узел, следующий за current
         if (ind)
         {
-
             current->next = Next;
             current->next->node_mutex->unlock();
         }
@@ -177,7 +176,6 @@ public:
         }
         prev->node_mutex->unlock();
     }
-
 
 private:
     Node* head;
